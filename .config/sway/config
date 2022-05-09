@@ -3,6 +3,7 @@
 #################################
 set $mod Mod4
 
+
 #################################
 #          Import Env           #
 #################################
@@ -24,6 +25,7 @@ bindsym $mod+Ctrl+c exec exec_cala.sh
 #################################
 font pango:Cantarell 11
 
+
 #################################
 #         Default apps          #
 #################################
@@ -32,6 +34,7 @@ bindsym $mod+Ctrl+w exec firefox
 bindsym $mod+Ctrl+h exec pcmanfm-qt
 bindsym $mod+Ctrl+m exec bluemail
 bindsym $mod+Return exec alacritty
+
 
 #################################
 #       System Essentials       #
@@ -46,18 +49,32 @@ exec --no-startup-id waybar -c ~/.config/waybar/sway/config-sway  -s ~/.config/w
 # start notification daemon
 exec --no-startup-id dunst &
 
-
 # start rofi (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show drun -theme ~/.config/rofi/sway/sway_config.rasi
-
 
 # powermenu
 bindsym $mod+Shift+p exec --no-startup-id nwg-bar
 
-
 # background changer and select next image on startup ( -n switch )
 exec --no-startup-id variety -n &
 
+# Disk mounts and notifications
+exec --no-startup-id udiskie -A -t &
+
+# Clipboard
+# Note : Not auto-starting the copyq program
+
+# Issue : Autostarting the app stops the show/hide feature working
+# How to replicate? : Uncomment the below autostart exec command,
+# in a new user session, launch the app, try to hide it and it won't work.
+# Kill the app, then relaunch, now repeat and it works. 
+
+# Solution : Don't auto-start it.
+# exec --no-startup-id copyq && copyq hide
+
+# Daylight
+# Change the ~/.config/gammastep/config.ini accordingly
+exec --no-startup-id gammastep-indicator &
 
 # auto-lock
 #set $lock $HOME/.config/system_scripts/session_lock
@@ -66,6 +83,8 @@ exec_always --no-startup-id swayidle -w timeout 300 ~/.config/system_scripts/way
 # lock-screen with key
 bindsym $mod+x exec --no-startup-id bash ~/.config/system_scripts/wayland_session_lock
 
+# polkit
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # info-center [uncomment or remove the line below to stop the info-center during startup]
 exec --no-startup-id welcomeapp
