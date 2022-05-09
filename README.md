@@ -1,5 +1,5 @@
-# Peux-swaywm-2203
-Peux OS Swaywm 22.03 dotfiles
+# Peux-swaywm-22
+Peux OS Swaywm 22.05 dotfiles
 
 Sample image:
 ![](https://github.com/peux-os-sic/Peux-sway-2203/blob/master/sway3.png)

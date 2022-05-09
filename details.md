@@ -1,1 +1,1 @@
-This will copy the Peux OS SwayWM 22.03 configurations to your system's "/tmp/Peux-swaywm-2203" directory. You may then copy the respective configuration from this directory over to your Home directory.  The repository can be found at https://github.com/peux-os-sic/Peux-swaywm-2203.
+This will copy the Peux OS SwayWM 22.05 configurations to your system's "/tmp/Peux-swaywm-22" directory. You may then copy the respective configuration from this directory over to your Home directory.  The repository can be found at https://github.com/peux-os-sic/Peux-swaywm-22.

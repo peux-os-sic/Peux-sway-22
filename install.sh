@@ -13,11 +13,11 @@ then
     echo "changing directory"
     cd ../
     mkdir $HOME/tmp
-    cp -r Peux-swaywm-2203/ $HOME/tmp/
-    rm -rf $HOME/tmp/Peux-swaywm-2203/install.sh
-    rm -rf $HOME/tmp/Peux-swaywm-2203/.git
-    rm -rf $HOME/tmp/Peux-swaywm-2203/details.md
-    rm -rf $HOME/tmp/Peux-swaywm-2203/*.png
+    cp -r Peux-swaywm-22/ $HOME/tmp/
+    rm -rf $HOME/tmp/Peux-swaywm-22/install.sh
+    rm -rf $HOME/tmp/Peux-swaywm-22/.git
+    rm -rf $HOME/tmp/Peux-swaywm-22/details.md
+    rm -rf $HOME/tmp/Peux-swaywm-22/*.png
     notify-send "Copied the configurations to $HOME/tmp/"
 else
     notify-send "skipping the setup!"
@@ -25,5 +25,5 @@ fi
 
 # cleanup
 
-rm -rf /tmp/fetcher/Peux-swaywm-2203
+rm -rf /tmp/fetcher/Peux-swaywm-22
 notify-send "Done!"
