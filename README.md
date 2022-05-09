@@ -2,7 +2,7 @@
 Peux OS Swaywm 22.05 dotfiles
 
 Sample image:
-![](https://github.com/peux-os-sic/Peux-sway-2203/blob/master/sway3.png)
+![](https://github.com/peux-os-sic/Peux-sway-22/blob/22.05/sway3.png)
 
 Note: 
 1. If you are using Peux Fetcher to pull the repo, you'd need 'Zenity': `sudo pacman -S zenity`
